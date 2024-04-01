@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: large;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1em;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ul.menu {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+h2 {
+  color: rgb(30, 139, 125);
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.section-1 {
+  background-color: #eee;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding: 4em 8em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.about-me {
+  margin: 2px 4px;
+  padding: 16px 18px 16px 24px;
+  text-align: end;
+}
+
+.about-img img {
+  width: 200px;
+}
+
+.section-2 img {
+  width: 100%;
+}
+
+.section-3 {
+  margin: 6px 16px;
+  padding: 20px;
+}
+
+.section-4 {
+  padding: 20px;
+  text-align: -webkit-center;
+  background-color: #eee;
+}
+
+.job {
+  display: flex;
+  gap: 3em;
+  padding: 10px 46px;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-title {
+  color: rgb(21, 114, 106);
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.job p {
+  padding: 2% 0;
+}
+
+.job-img {
+  display: flex;
+  justify-content: center;
+}
+
+.job img {
+  border-radius: 14px;
+}
+
+footer {
+  background-color: black;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer nav ul li {
+  padding: 4px;
+  gap: 1em;
+}
+
+.wsp {
+  position: fixed;
+  bottom: 22px;
+  right: 35px;
+}
+
+/* ------------- CSS General ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------- Encabezado Contacto ------------- */
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alertas {
+  color: red;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #5995da;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+.form-row button {
+  margin-left: 120px;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+.form-row textarea {
+  width: 250px;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    background-color: rgb(21, 114, 106);
+    font-size: medium;
+  }
+
+  header a {
+    margin-left: 20px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #encabezado ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(21, 114, 106);
+    text-align: center;
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  #check:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+
+  #encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #encabezado nav ul li a {
+    font-size: 20px;
+  }
+
+  /*#check:checked ~ .checkbtn {
+    color: #2c3e50;
+  } */
+  .section-1 {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-me {
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .about-img img {
+    width: 140px;
+  }
+
+  .job {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 6px;
+    text-align: center;
+  }
+
+  .wsp {
+    position: fixed;
+    bottom: 26px;
+    right: 34px;
+  }
+
+  .form-row button {
+    margin-left: 0;
+  }
+  
+  .formulario {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+  }
+
+  footer {
+    background-color: rgb(21, 114, 106);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section-4 {
+    margin: 4px 14px;
+    padding: 0;
+  }
+}
+
